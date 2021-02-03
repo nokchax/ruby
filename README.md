@@ -1,6 +1,9 @@
 # ruby
 
 ## 강의
+- https://insomenia.com/courses
+- https://www.inflearn.com/course/ruby-coin
+
 ### oop
 - 개념
 - 클래스와 인스턴스
