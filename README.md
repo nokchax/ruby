@@ -1,39 +1,9 @@
 # ruby
 
 ## 강의
-- https://insomenia.com/courses
-- https://www.inflearn.com/course/ruby-coin
+- [인섬니아](https://insomenia.com/courses)
+- [인프런](https://www.inflearn.com/course/ruby-coin)
 
-### oop
-- 개념
-- 클래스와 인스턴스
-- 상속
-- private, public
-- attr_accessor
-- orm
-
-### MVC
-- vc 구현
-- cr 구현
-- delete
-- update
-
-### link_to
-
-### restful
-
-### scaffold
-
-### form
-- form_tag vs form_for
-
-### devise
-
-### comment
-
-### user
-
-### hashtag
-
-### carrierwave
-
+## 책
+- [퍼펙트 루비 온 레일즈](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791185890326)
+- [프로그래밍 루비](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788966261673)
