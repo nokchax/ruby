@@ -7,6 +7,7 @@ end
 puts say_goodnight("kwanghyun")
 puts (say_goodnight("nokcha"))
 
+# "는 expression을 계산한 값으로 치환하는 작업을 수행한다.
 puts "And good night \nx"
 
 def say_goodnight2(name)
