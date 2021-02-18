@@ -4,3 +4,20 @@ puts "The first element is #{a[0]}"
 
 a[2] = nil
 puts "The array is now #{a.inspect}"
+
+a = ['ant', 'bee', 'cat', 'dog', 'elk']
+a[0] # => "ant"
+a[3] # => "dog"
+# 다음과 같다.
+a = %w{ant bee cat dog elk}
+a[0] # => "ant"
+a[3] # => "dog"
+
+inst_section = {
+  'cello' => 'string',
+  'clarinet' => 'woodwind',
+  'drum' => 'percussion',
+  'oboe' => 'woodwind',
+  'trumpet' => 'brass',
+  'violin' => 'string'
+}
