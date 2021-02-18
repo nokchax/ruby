@@ -21,3 +21,8 @@ inst_section = {
   'trumpet' => 'brass',
   'violin' => 'string'
 }
+
+# p 메서드는 puts와 비슷하지만 nil과 같은 객체도 출력한다.
+p inst_section['oboe'] # "woodwind"
+p inst_section['cello'] # "string"
+p inst_section['bassoon'] # nil
