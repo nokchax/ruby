@@ -29,3 +29,9 @@ inst_section = {
 p inst_section['oboe'] # "woodwind"
 p inst_section['cello'] # "string"
 p inst_section['bassoon'] # nil
+
+# 기본값 변경하기
+histogram = Hash.new(0) # 기본값은 0이다.
+histogram['ruby'] # => 0
+histogram['ruby'] = histogram['ruby'] + 1
+histogram['ruby'] # => 1
