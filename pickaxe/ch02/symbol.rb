@@ -10,7 +10,7 @@ inst_section = {
   :drum => 'percussion',
   :oboe => 'woodwind',
   :trumpet => 'brass',
-  :violin -> 'string'
+  :violin => 'string'
 }
 
 inst_section[:oboe] # => "woodwind"
