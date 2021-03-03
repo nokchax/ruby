@@ -80,4 +80,13 @@
 - 루비 표준에서는
   - 한 줄의 코드 블록은 중괄호
   - 여러 줄의 블록은 do/end를 사용
+- 메서드와 결합
+  - greet { puts "Hi" }
+  - verbose_greet("Dave", "loyal customer") { puts "Hi" } # 메서드에 매개변수가 있는 경우
+- yield
+  - 메서드내에 선언된 yield는 메서드에 연관된 블록을 호출하는 메서드 호출한다
+  - yield문에 인자를 적으면 코드 블록에 이 값이 매개 변수로 전달된다. yield(parameter1, parameter2, ...) codeblock {|parameter1, parameter2, ...| ~~ }
+- 코드 블록을 반복자 구현에 사용하기도 한다.
+- C나 Java에서의 반복문은 루비에서 단순히 메서드 호출이다.
 
+### 읽기와 쓰기
