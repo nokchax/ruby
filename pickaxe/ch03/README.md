@@ -37,3 +37,62 @@
 - 하나의 파일에서 모든 걸 다루기 어려워진다.
 - 하나의 덩어리로 되어 있는 코드는 자동화된 테스트를 작성하기 어렵다.
 - 재사용이 불가능해진다.
+
+## 접근제어
+클래스에 너무 깊이 접근하도록 허용하면, 각 요소간의 결합도(coupling)가 높아질 수 있다. 즉, 이 클래스의 사용자 코드는 클래스 내부 구현의 세세한 부분에까지 종속적이 되기 쉽다는 뜻이다.
+
+루비에는 세 가지 보호 단계가 있다.
+- public
+  - 루비에서는 기본적으로 public 이다
+  - 예외, initialize 는 항상 private
+- protected
+  - 객체를 정의한 클래스와 하위 클래스에서만 호출할 수 있다.
+- private
+  - 객체를 정의한 클래스에서만 호출이 가능하다.
+    
+루비가 다른 객체 지향 언어와 다른점, `접근제어가 동적으로 결정`된다. 즉, 프로그램이 실행될 떄 결정된다. 따라서 접근 위반 예외는 제한된 메서드를 실제로 호출한 그 순간에만 발생한다. (코드레벨에서 잡아낼 수 있는게 아니라 런타임 시에 발생한다는 의미인듯?)
+
+### 접근제어 기술하기
+접근제어 방법은 두 가지가 있다.
+1. public, protected, private 키워드 다음 메서드를 정의하는 방법
+2. 접근 제어 함수 뒤에 인자로 메서드 이름을 써 주는 방법
+
+```ruby
+class MyClass
+  def method1
+    #...
+  end
+  
+  protected # 이 아래 선언하는 메서드는 모두 protected
+  def method2
+    #...
+  end
+  
+  private # 이 아래 선언하는 메서드는 모두 private
+  def method3
+    #...
+  end
+  
+  public # 이 아래 선언 하는 모든 메서드는 public
+  def method4
+    #...
+  end
+end
+```
+
+```ruby
+class MyClass
+  def method1
+  end
+  def method2
+  end
+  def method3
+  end
+  def method4
+  end
+  
+  public :method1, :method4
+  protected :method2
+  private :method3
+end
+```
