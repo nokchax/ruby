@@ -96,3 +96,22 @@ class MyClass
   private :method3
 end
 ```
+
+## 변수
+- 변수는 객체에 대한 참조를 저장하고 있다.
+- 객체는 변수가 아니다. 단순히 객체에 대한 참조를 가지고 있을 뿐이다.
+- 루비의 문자열은 자바와 달리 변경이 가능하다.
+- String 의 dup 메서드를 사용하면 문자열을 복사한다.
+- freeze 를 사용하여 객체의 상태를 변경할 수 없도록 할 수 있다.
+```ruby
+person = "Tim"
+puts "The object in 'person' is a #{person.class}"
+puts "The object has an id of #{person.object_id}"
+puts "Hi #{person}"
+```
+```text
+실행결과:
+The object in 'person' is a String
+The object has an id of 120938102947120
+Hi Tim
+```
