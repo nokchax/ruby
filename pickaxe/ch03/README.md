@@ -44,7 +44,7 @@
 루비에는 세 가지 보호 단계가 있다.
 - public
   - 루비에서는 기본적으로 public 이다
-  - 예외, initialize 는 항상 private
+  - 예외, `initialize` 는 항상 private
 - protected
   - 객체를 정의한 클래스와 하위 클래스에서만 호출할 수 있다.
 - private
@@ -54,7 +54,7 @@
 
 ### 접근제어 기술하기
 접근제어 방법은 두 가지가 있다.
-1. public, protected, private 키워드 다음 메서드를 정의하는 방법
+1. `public`, `protected`, `private` 키워드 다음 메서드를 정의하는 방법
 2. 접근 제어 함수 뒤에 인자로 메서드 이름을 써 주는 방법
 
 ```ruby
@@ -101,8 +101,8 @@ end
 - 변수는 객체에 대한 참조를 저장하고 있다.
 - 객체는 변수가 아니다. 단순히 객체에 대한 참조를 가지고 있을 뿐이다.
 - 루비의 문자열은 자바와 달리 변경이 가능하다.
-- String 의 dup 메서드를 사용하면 문자열을 복사한다.
-- freeze 를 사용하여 객체의 상태를 변경할 수 없도록 할 수 있다.
+- String 의 `dup` 메서드를 사용하면 문자열을 복사한다.
+- `freeze` 를 사용하여 객체의 상태를 변경할 수 없도록 할 수 있다.
 ```ruby
 person = "Tim"
 puts "The object in 'person' is a #{person.class}"
